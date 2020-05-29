@@ -162,25 +162,3 @@ def build_haiku(cache):
         return poem
     except ValueError:
         print("Oops. Look like the corpus you choose was too small")
-
-
-def check_iamb(comment):
-    # Return if the words in the string is in iambic pentameter
-    iamb = "01" * 5
-    words = re.findall(r"\w+", comment)
-    sum_stress = ""
-    for word in words:
-        if get_syllable_count(word.lower()) == "invalid":
-            return False
-
-        stress = pronouncing.stresses_for_word(word.lower())
-        match_found = False
-        for i in stress:
-            if iamb.startswith(sum_stress + i):
-                sum_stress += i
-                match_found = True
-                break
-        if not match_found:
-            return False
-    if sum_stress == iamb:
-        print(comment + "****" + sum_stress)
