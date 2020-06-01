@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="rpoems",
-    version="1.0.1",
+    version="1.0.2",
     author="Neeraj Mula",
     author_email="neeraj.mula@rutgers.edu",
     description="Generate poems with comments from Reddit",
