@@ -1,5 +1,5 @@
 # Reddit Poem Generator
-Rpoems is a simple library that uses psaw (PushiftIO wrapper) and various different tactics to generate poetry from a corpus of reddit comments which are defined by many different parameters.
+Rpoems is a simple library that uses psaw (PushiftIO wrapper) and various different tactics to generate poetry from a corpus of reddit comments which are defined by various parameters.
 
 ## Requirements
 - Python 3.6+
