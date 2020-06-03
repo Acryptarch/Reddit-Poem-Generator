@@ -11,7 +11,7 @@ pip install rpoems
 ```
 
 # Documentation
-An import method in this library is the build corpus method which generates a cache of comments given certain parameters
+An important method in this library is the build corpus method which generates a cache of comments given certain parameters
 ```python
 import rpoems
 from datetime import datetime as dt
